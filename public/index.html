@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="col-10 col-sm-10 col-md-10 col-lg-10 col-xl-10 
+            offset-1 offset-sm-1 offset-md-1 offset-lg-1 offset-xl-1 p-3 nav"> 
+            <h2> Word Game </h2>
+        </div>
+        <div class="col-12 col-sm-12 col-md-10 col-lg-10 col-xl-6 
+            offset-md-1 offset-lg-1 offset-xl-3 mt-5 main-con"> 
+
+            <div class="start-con"> 
+                <div class="title-con"> 
+                    <p class="title"> Hangman <p> 
+                    <p class="sub-title"> Guess the word! </p>
+                </div>
+                <div class="play-con"> 
+                    <i class="fas fa-play play"></i> 
+                </div> 
+            </div>
+
+            <div class="menu-con">
+                <div class="back-con"> 
+                    <i class="fas fa-backward back"></i> 
+                </div>
+                <div class="menu-title-con">
+                    <p class="menu-title"> Pick a theme </p>
+                </div>
+                <div class="menu-list-con"> 
+                    <div class="item-con">  
+                        <p class="item">Random</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Famous People</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Movies</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Countries & Cities</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Television Shows</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Dictionary</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Characters</p>
+                    </div>
+                    <div class="item-con">  
+                        <p class="item">Kids</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game-con">
+                <div class="game-back-con"> 
+                    <i class="fas fa-backward game-back" data-toggle="modal" data-target="#gameBackModal"></i>                       
+                </div>
+
+                <div class="modal fade" id="gameBackModal" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                      <div class="modal-content mdc">
+                        <div class="modal-body">
+                          <p> Are you sure you want to Quit? </p>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-success game-back-ok" data-dismiss="modal"> Yes </button>
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal"> Cancel </button>
+                        </div>
+                      </div>
+                    </div>
+                </div>  
+
+                <div class="hangman-con col-6">
+                    <img src=" " alt="" class="hangman img-fluid">
+                </div>
+
+                <div class="content-con col-6">
+                    <div class="category-title-con"> 
+                        <p class="category-title"> </p>
+                    </div>
+
+                    <div class="letter-holders-con"> </div>
+
+                    <div class="hint-con"> </div>
+
+                    <div class="letters-con"> </div>
+                </div>
+
+            </div>
+            
+        </div>
+    </div>
+    <script src="index.js"> </script>
+</body>
+</html>
